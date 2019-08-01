@@ -1,0 +1,18 @@
+version: "2"
+services:
+  pandas_conda_1:
+    build: ./
+    ports:
+      - "49161:49161"
+      - "49162:49162"
+    environment:
+      TZ: "Asia/Tokyo"
+    container_name: "pandas_1_sink"
+    volumes:
+      - ./data:/notes
+      #- ./git/detect_sink_1/:/notes
+    tty: 
+      true
+
+
+
