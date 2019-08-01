@@ -10,7 +10,6 @@ services:
     container_name: "pandas_1_sink"
     volumes:
       - ./data:/notes
-      #- ./git/detect_sink_1/:/notes
     tty: 
       true
 
